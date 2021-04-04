@@ -24,7 +24,7 @@ const server = async () => {
     app.use('/blog/:blogId/comment', commentRouter);
 
     app.listen(PORT, async () => {
-      console.log(`server listening on port ${port}`);
+      console.log(`server listening on port ${PORT}`);
       console.time('insert time: ');
       //await generateFakeData(10, 2, 10);
       console.timeEnd('insert time: ');
